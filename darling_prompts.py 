@@ -1,0 +1,15 @@
+from datetime import datetime
+
+def greet_user():
+    now = datetime.now().hour
+    if now < 12:
+        greeting = "Good morning 🌅"
+    elif now < 17:
+        greeting = "Good afternoon ☀️"
+    else:
+        greeting = "Good evening 🌆"
+
+    return f"""
+{greeting}, ನಾನು ಡಾರ್ಲಿಂಗ್ — ನಿಮ್ಮ ಸಹಾಯಕ AI 💖  
+ನಾನು ಇಲ್ಲಿ ನಿಮ್ಮ ಸಂಗಾತಿಯಾಗಿ ಹಾಜರಿದ್ದೇನೆ — ಕೇಳಿ ನೀವು ಏನು ಬೇಕಾದರೂ ಕೇಳಿ 😄  
+"""
